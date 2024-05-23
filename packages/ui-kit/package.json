@@ -1,0 +1,8 @@
+{
+  "name": "@hukpo/ui-kit",
+  "version": "1.0.0",
+  "peerDependencies": {
+    "nativewind": "*",
+    "tailwindcss": "*"
+  }
+}

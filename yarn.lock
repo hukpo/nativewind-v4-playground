@@ -2147,6 +2147,7 @@ __metadata:
   resolution: "@hukpo/playground@workspace:apps/playground"
   dependencies:
     "@babel/core": "npm:^7.20.0"
+    "@hukpo/ui-kit": "npm:*"
     "@types/react": "npm:~18.2.14"
     expo: "npm:^50.0.17"
     expo-status-bar: "npm:~1.11.1"
@@ -2155,6 +2156,15 @@ __metadata:
     react-native: "npm:0.73.6"
     react-native-reanimated: "npm:~3.6.2"
     tailwindcss: "npm:^3.3.6"
+  languageName: unknown
+  linkType: soft
+
+"@hukpo/ui-kit@npm:*, @hukpo/ui-kit@workspace:packages/ui-kit":
+  version: 0.0.0-use.local
+  resolution: "@hukpo/ui-kit@workspace:packages/ui-kit"
+  peerDependencies:
+    nativewind: "*"
+    tailwindcss: "*"
   languageName: unknown
   linkType: soft
 
