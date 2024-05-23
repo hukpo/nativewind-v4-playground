@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "peerDependencies": {
     "nativewind": "*",
+    "react": "*",
     "tailwindcss": "*"
   },
   "dependencies": {
-    "nativewind": "4.0.36"
+    "class-variance-authority": "^0.7.0",
+    "nativewind": "4.0.36",
+    "tailwind-merge": "^1.13.2"
   },
   "devDependencies": {
     "tailwindcss": "^3.3.6"
