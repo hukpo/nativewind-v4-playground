@@ -4,5 +4,11 @@
   "peerDependencies": {
     "nativewind": "*",
     "tailwindcss": "*"
+  },
+  "dependencies": {
+    "nativewind": "4.0.36"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.6"
   }
 }

@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+const preset = {
   content: [],
   presets: [require("nativewind/preset")],
   theme: {
@@ -10,3 +10,5 @@ module.exports = {
     },
   },
 };
+
+module.exports = { preset };
