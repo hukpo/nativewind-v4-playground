@@ -1,6 +1,5 @@
 import "../global.css";
 
-import { vars } from "nativewind";
 import React, { useState } from "react";
 import { UIView } from "@hukpo/ui-kit/ui-view";
 import { UIText } from "@hukpo/ui-kit/ui-text";
