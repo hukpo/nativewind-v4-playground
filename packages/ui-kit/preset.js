@@ -10,13 +10,24 @@ const fontSize = {
   xxxLarge: ["38px", "48px"],
 };
 
+const breakpoints = {
+  sm: "640px",
+  md: "768px",
+  lg: "1024px",
+  xl: "1280px",
+  "2xl": "1536px",
+};
+
 /** @type {import('tailwindcss').Config} */
 const preset = {
   content: [],
   presets: [require("nativewind/preset")],
+  plugins: [
+    require("tailwindcss-animate"),
+    require("@tailwindcss/container-queries"),
+  ],
   theme: {
     extend: {
-      fontSize,
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
@@ -55,7 +66,27 @@ const preset = {
         "button-active": "var(--button-active)",
         "button-active-foreground": "var(--button-active-foreground)",
       },
+      fontSize,
+      fontFamily: {
+        manrope: ["Manrope"],
+      },
+      screens: breakpoints,
+      containers: breakpoints,
+      animation: {
+        shimmer: "shimmer 2s ease-out infinite",
+      },
+      keyframes: {
+        shimmer: {
+          "100%": { transform: "translateX(0%)", opacity: "0" },
+        },
+      },
     },
+  },
+  corePlugins: {
+    preflight: false,
+  },
+  future: {
+    hoverOnlyWhenSupported: true,
   },
 };
 
